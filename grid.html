@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practise</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgb(19, 20, 20);
+        background: rgb(252, 187, 187);
+       }
+       .container{
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        
+       }
+       .item{
+        background: steelblue;
+        color: #000;
+        font-size: 20px;
+        padding: 20px;
+        border: rgb(125, 125, 245) 1px solid;
+        
+       }
+       .item:nth-of-type(2){
+        justify-self: center;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    
+</body>
+</html>
