@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assignment</title>
+</head>
+<body>
+    <h2>Assignment DOM</h2>
+    <button id="MyClick">Click ME:)</button>
+    <p id="demo"></p>
+    <SCRipt>
+        var x = document.getElementById("MyClick");
+        x.addEventListener("mouseover", MyFunction);
+        x.addEventListener("click", MySecondFunction);
+        x.addEventListener("mouseout", MyThirdFunction);
+        function MyFunction(){
+            document.getElementById("demo").innerHTML+="mousedover!<br>";
+        }
+        function MySecondFunction(){
+            document.getElementById("demo").innerHTML+="clicked! <br>";
+
+        }
+        function MyThirdFunction(){
+            document.getElementById("demo").innerHTML+="mouseout!<br>";
+
+        }
+
+
+    </SCRipt>
+    
+</body>
+</html>
